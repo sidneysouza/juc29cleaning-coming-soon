@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #02B7BA;
+  --color-secondary: #EFD403;
+  --color-background-light: #f8fdfd;
+  --color-background-dark: #0a1a1a;
+  --font-display: "Public Sans", sans-serif;
+  --radius-default: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-full: 9999px;
+}
+
+:root {
+  --background: var(--color-background-light);
+  --foreground: #0f172a; /* slate-900 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--color-background-dark);
+    --foreground: #f8fafc; /* slate-100 */
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-display);
+}
